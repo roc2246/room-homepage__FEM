@@ -1,0 +1,22 @@
+{
+  "name": "room-homepage-master",
+  "version": "1.0.0",
+  "description": "A responsive homepage",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roc2246/room-homepage__FEM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roc2246/room-homepage__FEM/issues"
+  },
+  "homepage": "https://github.com/roc2246/room-homepage__FEM#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
