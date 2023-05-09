@@ -9,3 +9,11 @@ body {
 button {
   border: none;
   background-color: transparent; }
+
+p {
+  line-height: 1.25rem; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    border-bottom: solid; }

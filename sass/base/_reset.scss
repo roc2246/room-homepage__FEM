@@ -4,5 +4,12 @@ button{
 }
 
 p{
-    // line-height: 15px;
+    line-height: 1.25rem;
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        border-bottom: solid;
+    }
 }
