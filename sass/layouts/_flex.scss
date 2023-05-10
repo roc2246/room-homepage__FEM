@@ -1,6 +1,14 @@
 .nav {
   display: flex;
   flex-direction: row;
+
+  &__links{
+    &--mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+  }
 }
 
 .slider {

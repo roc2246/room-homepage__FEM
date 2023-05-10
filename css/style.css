@@ -47,6 +47,10 @@ a {
 .nav {
   display: flex;
   flex-direction: row; }
+  .nav__links--mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; }
 
 .slider {
   display: flex;
@@ -65,7 +69,13 @@ a {
     margin-left: auto;
     margin-right: auto; }
   .nav__links--mobile {
-    display: none; }
+    display: none;
+    position: absolute;
+    background-color: #a1a1a1;
+    left: 2.063rem;
+    padding: 1rem;
+    height: 10rem;
+    width: 5rem; }
 
 .slider {
   background-image: url("/images/mobile-image-hero-1.jpg");
