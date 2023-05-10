@@ -34,6 +34,8 @@ a {
   .top-blurb__CTA {
     font-weight: 500;
     letter-spacing: 1em; }
+    .top-blurb__CTA:hover {
+      color: #a1a1a1; }
 
 .about__blurb {
   margin: 3.313rem 2.063rem; }
