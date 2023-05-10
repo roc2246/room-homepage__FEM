@@ -1,0 +1,8 @@
+.nav{
+    margin-left: map-get($map: $margins, $key: "mobile-x");
+
+&__toggle{
+    margin-left: map-get($map: $margins, $key: "mobile-x");
+
+}
+}

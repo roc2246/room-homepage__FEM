@@ -1,0 +1,9 @@
+.top-blurb{
+    margin-left: map-get($map: $margins, $key: "mobile-x");
+    margin-right: map-get($map: $margins, $key: "mobile-x");
+}
+
+.about__blurb{
+    margin-left: map-get($map: $margins, $key: "mobile-x");
+    margin-right: map-get($map: $margins, $key: "mobile-x");
+}

@@ -8,13 +8,30 @@ body {
 
 button {
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  padding: 0; }
 
 p {
   line-height: 1.25rem; }
+
+h1 {
+  line-height: 1.5rem; }
 
 a {
   text-decoration: none;
   color: white; }
   a:hover {
     border-bottom: solid; }
+
+.top-blurb {
+  margin-left: 2.063rem;
+  margin-right: 2.063rem; }
+
+.about__blurb {
+  margin-left: 2.063rem;
+  margin-right: 2.063rem; }
+
+.nav {
+  margin-left: 2.063rem; }
+  .nav__toggle {
+    margin-left: 2.063rem; }
