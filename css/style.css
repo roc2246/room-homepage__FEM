@@ -38,6 +38,12 @@ a {
   margin-left: 2.063rem;
   margin-right: 2.063rem; }
 
+.slider__container {
+  background-color: black;
+  padding: 1.5rem; }
+  .slider__container:hover {
+    background-color: #a1a1a1; }
+
 .nav {
   display: flex;
   flex-direction: row; }
@@ -67,3 +73,5 @@ a {
   background-repeat: no-repeat;
   width: 100%;
   aspect-ratio: 1/1; }
+  .slider__toggle--desktop {
+    display: none; }

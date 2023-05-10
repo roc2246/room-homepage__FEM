@@ -1,0 +1,9 @@
+.slider {
+  &__container {
+    background-color: map-get($map: $colors, $key: "black");
+    padding: 1.5rem;
+    &:hover {
+      background-color: map-get($map: $colors, $key: "dark-grey");
+    }
+  }
+}
