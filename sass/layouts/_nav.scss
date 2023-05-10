@@ -25,4 +25,12 @@
       width: 5rem;
     }
   }
+  &__link {
+    &--anchor {
+      color: map-get($map: $colors, $key: "white");
+      &:hover {
+        border-bottom: solid;
+      }
+    }
+  }
 }

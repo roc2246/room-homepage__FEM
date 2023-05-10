@@ -26,9 +26,7 @@ li {
 
 a {
   text-decoration: none;
-  color: white; }
-  a:hover {
-    border-bottom: solid; }
+  cursor: pointer; }
 
 .top-blurb {
   margin-left: 2.063rem;
@@ -76,6 +74,10 @@ a {
     padding: 1rem;
     height: 10rem;
     width: 5rem; }
+  .nav__link--anchor {
+    color: white; }
+    .nav__link--anchor:hover {
+      border-bottom: solid; }
 
 .slider {
   background-image: url("/images/mobile-image-hero-1.jpg");
