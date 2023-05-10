@@ -7,6 +7,7 @@ body {
   margin: 0; }
 
 button {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   padding: 0; }
@@ -16,6 +17,12 @@ p {
 
 h1 {
   line-height: 1.5rem; }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style-type: none; }
 
 a {
   text-decoration: none;
@@ -32,6 +39,28 @@ a {
   margin-right: 2.063rem; }
 
 .nav {
-  margin-left: 2.063rem; }
-  .nav__toggle {
-    margin-left: 2.063rem; }
+  display: flex;
+  flex-direction: row; }
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .slider__toggle {
+    margin-left: auto; }
+
+.nav {
+  margin: 3rem 2.063rem; }
+  .nav__toggle--close {
+    display: none; }
+  .nav .logo {
+    margin-left: auto;
+    margin-right: auto; }
+  .nav__links--mobile {
+    display: none; }
+
+.slider {
+  background-image: url("/images/mobile-image-hero-1.jpg");
+  height: 22rem; }
+  .slider__toggle {
+    top: 0; }

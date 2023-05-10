@@ -1,8 +1,21 @@
-.nav{
-    margin-left: map-get($map: $margins, $key: "mobile-x");
+.nav {
+  margin: map-get($map: $margins, $key: "nav-y")
+    map-get($map: $margins, $key: "mobile-x");
 
-&__toggle{
-    margin-left: map-get($map: $margins, $key: "mobile-x");
+  &__toggle {
+    &--close {
+      display: none;
+    }
+  }
 
-}
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__links {
+    &--mobile {
+      display: none;
+    }
+  }
 }

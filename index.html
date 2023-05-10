@@ -16,25 +16,35 @@
   </head>
   <body>
     <header class="slider">
-      <div class="nav__toggle">
-        <img
-          src="./images/icon-hamburger.svg"
-          alt="Open Nav"
-          class="nav__toggle--open"
-        />
-        <img
-          src="./images/icon-close.svg"
-          alt="Close Nav"
-          class="nav__toggle--close"
-        />
-      </div>
-      <img src="./images/logo.svg" alt="room-logo" class="logo" />
+      <nav class="nav">
+        <button class="nav__toggle">
+          <img
+            src="./images/icon-hamburger.svg"
+            alt="Open Nav"
+            class="nav__toggle--open"
+          />
+          <img
+            src="./images/icon-close.svg"
+            alt="Close Nav"
+            class="nav__toggle--close"
+          />
+        </button>
+        <img src="./images/logo.svg" alt="room-logo" class="logo" />
 
-      <nav class="nav nav--mobile">
-        <a href="" class="nav__link">home</a>
-        <a href="" class="nav__link">shop</a>
-        <a href="" class="nav__link">about</a>
-        <a href="" class="nav__link">contact</a>
+        <ul class="nav__links nav__links--mobile">
+          <li class="nav__link">
+            <a href="" class="nav__link--anchor">home</a>
+          </li>
+          <li class="nav__link">
+            <a href="" class="nav__link--anchor">shop</a>
+          </li>
+          <li class="nav__link">
+            <a href="" class="nav__link--anchor">about</a>
+          </li>
+          <li class="nav__link">
+            <a href="" class="nav__link--anchor">contact</a>
+          </li>
+        </ul>
       </nav>
 
       <div class="slider__toggle slider__toggle--mobile">
