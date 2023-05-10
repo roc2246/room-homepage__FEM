@@ -47,7 +47,9 @@ a {
   flex-direction: column;
   justify-content: space-between; }
   .slider__toggle {
-    margin-left: auto; }
+    display: flex;
+    flex-direction: row;
+    justify-content: end; }
 
 .nav {
   margin: 3rem 2.063rem; }
@@ -61,6 +63,7 @@ a {
 
 .slider {
   background-image: url("/images/mobile-image-hero-1.jpg");
-  height: 22rem; }
-  .slider__toggle {
-    top: 0; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 1/1; }

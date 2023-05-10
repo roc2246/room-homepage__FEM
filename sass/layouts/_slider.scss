@@ -1,8 +1,7 @@
 .slider{
     background-image: url("/images/mobile-image-hero-1.jpg");
-    height: 22rem;
-
-    &__toggle{
-top: 0;
-    }
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 1/1;
 }

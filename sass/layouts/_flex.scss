@@ -1,14 +1,16 @@
-.nav{
-    display: flex;
-    flex-direction: row;
+.nav {
+  display: flex;
+  flex-direction: row;
 }
 
-.slider{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-    &__toggle{
-        margin-left: auto;
-    }
+  &__toggle{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
 }
