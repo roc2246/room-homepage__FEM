@@ -1,6 +1,5 @@
 .top-blurb{
-    margin-left: map-get($map: $margins, $key: "mobile-x");
-    margin-right: map-get($map: $margins, $key: "mobile-x");
+    margin: 3.75rem map-get($map: $margins, $key: "mobile-x");
 
     &__CTA{
         font-weight: map-get($map: $font-weights, $key: "bold");
@@ -10,8 +9,7 @@
 
 .about{
     &__blurb{
-     margin-left: map-get($map: $margins, $key: "mobile-x");
-    margin-right: map-get($map: $margins, $key: "mobile-x");   
+     margin: 3.313rem map-get($map: $margins, $key: "mobile-x");
     }
     &__heading{
         letter-spacing: 0.375em;
