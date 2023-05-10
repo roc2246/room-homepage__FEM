@@ -9,6 +9,7 @@ p{
 
 a{
     text-decoration: none;
+    color: map-get($map: $colors, $key: "white");
     &:hover{
         border-bottom: solid;
     }

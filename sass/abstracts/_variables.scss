@@ -1,17 +1,17 @@
 $screen-sizes: (
-  mobile: 375px,
-  desktop: 1440px,
+  "mobile": 375px,
+  "desktop": 1440px,
 );
 
 $colors: (
-  dark-grey: hsl(0, 0%, 63%),
-  black: hsl(0, 0%, 0%),
-  white: hsl(0, 0%, 100%),
-  very-dark-grey: hsl(0, 0%, 27%),
+  "dark-grey": hsl(0, 0%, 63%),
+  "black": hsl(0, 0%, 0%),
+  "white": hsl(0, 0%, 100%),
+  "very-dark-grey": hsl(0, 0%, 27%),
 );
 
-$font-size: 12px;
+$font-size: 16px;
 
 $font-family: 'League Spartan', sans-serif;
 
-$font-weight: (bold: 500, bolder: 600, boldest: 700)
+$font-weight: ("bold": 500, "bolder": 600, "boldest": 700)
