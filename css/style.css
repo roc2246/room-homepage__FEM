@@ -63,6 +63,11 @@ a {
   width: 100%;
   aspect-ratio: 420/266; }
 
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
 .nav {
   display: flex;
   flex-direction: row; }
@@ -79,6 +84,11 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: end; }
+
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
 
 .nav {
   margin: 3rem 2.063rem; }
