@@ -7,6 +7,7 @@ button{
 
 p{
     line-height: 1.25rem;
+    font-weight: map-get($map: $font-weights, $key: "light");
 }
 
 h1{

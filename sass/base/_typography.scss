@@ -1,9 +1,19 @@
 .top-blurb{
     margin-left: map-get($map: $margins, $key: "mobile-x");
     margin-right: map-get($map: $margins, $key: "mobile-x");
+
+    &__CTA{
+        font-weight: map-get($map: $font-weights, $key: "bold");
+        letter-spacing: 1em;
+    }
 }
 
-.about__blurb{
-    margin-left: map-get($map: $margins, $key: "mobile-x");
-    margin-right: map-get($map: $margins, $key: "mobile-x");
+.about{
+    &__blurb{
+     margin-left: map-get($map: $margins, $key: "mobile-x");
+    margin-right: map-get($map: $margins, $key: "mobile-x");   
+    }
+    &__heading{
+        letter-spacing: 0.375em;
+    }
 }
