@@ -122,15 +122,15 @@ header {
   .nav__links {
     display: none; }
     .nav__links--mobile {
-      flex-direction: column;
+      flex-direction: column !important;
       gap: 1.5rem; }
   @media (min-width: 501px) {
     .nav {
       gap: 2rem; }
-      .nav__links--desktop {
-        display: flex;
+      .nav__links {
+        display: flex !important;
         flex-direction: row;
-        gap: 2rem; } }
+        gap: 2rem !important; } }
 
 .slider {
   display: flex;
@@ -165,13 +165,13 @@ header {
   .nav__links {
     margin-top: 0; }
     .nav__links--mobile {
-      position: absolute;
-      background-color: #a1a1a1;
-      left: 1.75rem;
-      top: 6rem;
-      padding: 1rem;
-      height: 10rem;
-      width: 5rem; }
+      position: absolute !important;
+      background-color: #a1a1a1 !important;
+      left: 1.75rem !important;
+      top: 6rem !important;
+      padding: 1rem !important;
+      height: 10rem !important;
+      width: 5rem !important; }
   .nav__link {
     height: 2rem; }
     .nav__link:hover {

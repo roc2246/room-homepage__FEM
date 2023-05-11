@@ -11,19 +11,17 @@ header {
   &__links {
     display: none;
     &--mobile {
-      flex-direction: column;
+      flex-direction: column !important;
       gap: 1.5rem;
     }
   }
   @media (min-width: 501px) {
   gap: 2rem;
     &__links {
-      &--desktop {
-        display: flex;
+        display: flex !important;
         flex-direction: row;
-        gap: 2rem;
+        gap: 2rem !important;
       }
-    }
   }
 }
 

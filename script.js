@@ -9,12 +9,10 @@ toggle.onclick = () => {
     hamburger.style.display = "none";
     x.style.display = "inline";
     nav.classList.add("nav__links--mobile");
-    nav.classList.remove("nav__links--desktop");
   } else if (nav.style.display === "flex") {
     nav.style.display = "none";
     hamburger.style.display = "inline";
     x.style.display = "none";
-    nav.classList.add("nav__links--desktop");
     nav.classList.remove("nav__links--mobile");
   }
 };
