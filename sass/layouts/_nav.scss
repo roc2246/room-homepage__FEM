@@ -8,14 +8,29 @@
     }
   }
 
+  @media (min-width: 501px) {
+    &__toggle {
+      display: none;
+    }
+  }
+
   .logo {
+    align-self: start;
     margin-left: auto;
     margin-right: auto;
   }
 
+  @media (min-width: 501px) {
+    .logo {
+      margin-left: unset;
+      margin-right: unset;
+    }
+  }
+
   &__links {
+    display: none;
+    margin-top: 0;
     &--mobile {
-      display: none;
       position: absolute;
       background-color: map-get($map: $colors, $key: "dark-grey");
 
@@ -24,13 +39,24 @@
       height: 10rem;
       width: 5rem;
     }
+    
+  }
+  @media (min-width: 501px) {
+    &__links {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+    }
   }
   &__link {
+    height: 2rem;
+    &:hover {
+      border-bottom: solid;
+      border-color: white;
+    }
     &--anchor {
       color: map-get($map: $colors, $key: "white");
-      &:hover {
-        border-bottom: solid;
-      }
+      
     }
   }
 }

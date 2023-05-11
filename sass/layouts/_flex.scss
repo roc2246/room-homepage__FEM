@@ -1,4 +1,4 @@
-header{
+header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -7,14 +7,21 @@ header{
 .nav {
   display: flex;
   flex-direction: row;
+  gap: 2rem;
 
-  &__links{
-    &--mobile{
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
+  &__links {
+    &--mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    &--desktop {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
+  
 }
 
 .slider {
@@ -22,20 +29,20 @@ header{
   flex-direction: column;
   justify-content: space-between;
 
-  &__toggle{
+  &__toggle {
     display: flex;
     flex-direction: row;
     justify-content: end;
   }
 }
 
-.top-blurb{
+.top-blurb {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.about{
+.about {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
