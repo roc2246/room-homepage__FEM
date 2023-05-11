@@ -8,11 +8,9 @@
   &__toggle {
     &--desktop {
       display: none;
-      position: absolute;
-      align-self: start;
-      min-width: calc(1440px - 840px - 420px);
-      margin-top: 27.813rem;
-      margin-left: 52.5rem;
+      width: 180px;
+      margin-top: auto;
+      margin-right: auto;
       & > .slider__container {
         width: 50%;
         aspect-ratio: 1/1;

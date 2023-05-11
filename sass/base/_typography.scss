@@ -1,6 +1,10 @@
 .top-blurb {
   margin: 3.75rem 1.875rem;
-  max-width: 25rem;
+  &__CTA,
+  &__heading,
+  &__paragraph {
+    max-width: 25rem;
+  }
   &__CTA {
     font-weight: map-get($map: $font-weights, $key: "bold");
     letter-spacing: 1em;
@@ -14,6 +18,25 @@
   .top-blurb {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .top-blurb {
+    margin: unset;
+    width: calc(1440px - 840px);
+    &__heading, &__paragraph{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__heading{
+      margin-top: auto;
+    }
+    &__CTA{
+      margin-right: auto;
+      margin-left: auto;
+      min-width: 25rem;
+    }
   }
 }
 
@@ -35,4 +58,3 @@
     }
   }
 }
-
