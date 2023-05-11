@@ -181,7 +181,6 @@ header {
       color: white; }
 
 .slider {
-  background-image: url("/images/mobile-image-hero-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -194,12 +193,17 @@ header {
     .slider__toggle--desktop > .slider__container {
       width: 50%;
       aspect-ratio: 1/1; }
+  .slider--mobile {
+    background-image: url("/images/mobile-image-hero-1.jpg"); }
 
 @media (min-width: 801px) {
   .slider {
-    background-image: url("/images/desktop-image-hero-1.jpg");
     max-width: 840px;
-    aspect-ratio: 840/534; } }
+    aspect-ratio: 840/534; }
+    .slider--mobile {
+      background-image: none; }
+    .slider--desktop {
+      background-image: url("/images/desktop-image-hero-1.jpg"); } }
 
 @media (min-width: 1440px) {
   .slider__toggle--desktop {

@@ -1,5 +1,4 @@
 .slider {
-  background-image: url("/images/mobile-image-hero-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -17,13 +16,22 @@
       }
     }
   }
+
+  &--mobile {
+    background-image: url("/images/mobile-image-hero-1.jpg");
+  }
 }
 
 @media (min-width: 801px) {
   .slider {
-    background-image: url("/images/desktop-image-hero-1.jpg");
     max-width: 840px;
     aspect-ratio: 840/534;
+    &--mobile {
+      background-image: none;
+    }
+    &--desktop {
+      background-image: url("/images/desktop-image-hero-1.jpg");
+    }
   }
 }
 
