@@ -7,7 +7,6 @@ header {
 .nav {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
 
   &__links {
     display: none;
@@ -17,6 +16,7 @@ header {
     }
   }
   @media (min-width: 501px) {
+  gap: 2rem;
     &__links {
       &--desktop {
         display: flex;

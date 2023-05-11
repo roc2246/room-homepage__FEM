@@ -8,6 +8,16 @@
   &__toggle {
     &--desktop {
       display: none;
+      position: absolute;
+      min-width: calc(100% - 840px - 420px);
+      align-self: start;
+      top: 475px;
+      left: 52.5rem;
+      & > .slider__container {
+        width: 50%;
+        height: 3.705rem;
+        // aspect-ratio: 1/1;
+      }
     }
   }
 }
@@ -17,5 +27,18 @@
     background-image: url("/images/desktop-image-hero-1.jpg");
     max-width: 840px;
     aspect-ratio: 840/534;
+  }
+}
+
+@media (min-width: 1440px) {
+  .slider {
+    &__toggle {
+      &--desktop {
+        display: flex;
+      }
+      &--mobile {
+        display: none;
+      }
+    }
   }
 }

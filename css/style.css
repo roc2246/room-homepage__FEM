@@ -102,18 +102,19 @@ header {
 
 .nav {
   display: flex;
-  flex-direction: row;
-  gap: 2rem; }
+  flex-direction: row; }
   .nav__links {
     display: none; }
     .nav__links--mobile {
       flex-direction: column;
       gap: 1.5rem; }
   @media (min-width: 501px) {
-    .nav__links--desktop {
-      display: flex;
-      flex-direction: row;
-      gap: 2rem; } }
+    .nav {
+      gap: 2rem; }
+      .nav__links--desktop {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem; } }
 
 .slider {
   display: flex;
@@ -169,10 +170,24 @@ header {
   width: 100%;
   aspect-ratio: 375/360; }
   .slider__toggle--desktop {
-    display: none; }
+    display: none;
+    position: absolute;
+    min-width: calc(100% - 840px - 420px);
+    align-self: start;
+    top: 475px;
+    left: 52.5rem; }
+    .slider__toggle--desktop > .slider__container {
+      width: 50%;
+      height: 3.705rem; }
 
 @media (min-width: 801px) {
   .slider {
     background-image: url("/images/desktop-image-hero-1.jpg");
     max-width: 840px;
     aspect-ratio: 840/534; } }
+
+@media (min-width: 1440px) {
+  .slider__toggle--desktop {
+    display: flex; }
+  .slider__toggle--mobile {
+    display: none; } }
