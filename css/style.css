@@ -43,6 +43,11 @@ a {
     .top-blurb__CTA:hover {
       color: #a1a1a1; }
 
+@media (min-width: 455px) {
+  .top-blurb {
+    margin-left: auto;
+    margin-right: auto; } }
+
 .about__blurb {
   margin: 3.375rem 1.875rem 2.75rem 1.875rem;
   max-width: 30rem; }
@@ -53,6 +58,11 @@ a {
 
 .about__paragraph {
   margin-bottom: 0; }
+
+@media (min-width: 455px) {
+  .about__blurb {
+    margin-left: auto;
+    margin-right: auto; } }
 
 .slider__container {
   background-color: black;
@@ -65,7 +75,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  max-width: 420px;
   aspect-ratio: 420/266; }
 
 .about__img-cont--light {
@@ -74,8 +83,13 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  max-width: 420px;
   aspect-ratio: 420/266; }
+
+@media (min-width: 801px) {
+  .about__img-cont--dark {
+    max-width: 420px; }
+  .about__img-cont--light {
+    max-width: 420px; } }
 
 header {
   display: flex;
@@ -98,6 +112,11 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: end; }
+
+.top-blurb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .about {
   display: flex;
@@ -129,7 +148,12 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  max-width: 375px;
   aspect-ratio: 375/360; }
   .slider__toggle--desktop {
     display: none; }
+
+@media (min-width: 801px) {
+  .slider {
+    background-image: url("/images/desktop-image-hero-1.jpg");
+    max-width: 840px;
+    aspect-ratio: 840/534; } }

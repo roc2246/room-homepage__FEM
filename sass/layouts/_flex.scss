@@ -29,6 +29,12 @@ header{
   }
 }
 
+.top-blurb{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .about{
   display: flex;
   flex-direction: row;

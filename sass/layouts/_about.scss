@@ -5,35 +5,30 @@
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
-      max-width: 420px;
+      // max-width: 26.25rem;
       aspect-ratio: 420/266;
     }
     &--light {
       margin-left: auto;
-        background-image: url("/images/image-about-light.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-      max-width: 420px;
-        aspect-ratio: 420/266;
-      }
+      background-image: url("/images/image-about-light.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      // max-width: 26.25rem;
+      aspect-ratio: 420/266;
+    }
   }
 }
 
-// @media (min-width: 1441px) {
-//   .about {
-//     &__img-cont {
-//       &--dark {
-      
-//         max-width: 600px;
-     
-//       }
-//       &--light {
-      
-        
-//         max-width: 600px;
-       
-//         }
-//     }
-//   }
-// }
+@media (min-width: 801px) {
+  .about {
+    &__img-cont {
+      &--dark {
+        max-width: 420px;
+      }
+      &--light {
+        max-width: 420px;
+      }
+    }
+  }
+}
