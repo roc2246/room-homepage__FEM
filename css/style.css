@@ -4,7 +4,8 @@ html {
   font-family: "League Spartan", sans-serif; }
 
 body {
-  margin: 0; }
+  margin: 0 auto;
+  max-width: 1440px; }
 
 button {
   cursor: pointer;
@@ -172,13 +173,13 @@ header {
   .slider__toggle--desktop {
     display: none;
     position: absolute;
-    min-width: calc(100% - 840px - 420px);
     align-self: start;
-    top: 475px;
-    left: 52.5rem; }
+    min-width: calc(1440px - 840px - 420px);
+    margin-top: 27.813rem;
+    margin-left: 52.5rem; }
     .slider__toggle--desktop > .slider__container {
       width: 50%;
-      height: 3.705rem; }
+      aspect-ratio: 1/1; }
 
 @media (min-width: 801px) {
   .slider {
