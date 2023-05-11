@@ -1,20 +1,28 @@
-.top-blurb{
-    margin: 3.75rem map-get($map: $margins, $key: "mobile-x");
-
-    &__CTA{
-        font-weight: map-get($map: $font-weights, $key: "bold");
-        letter-spacing: 1em;
-        &:hover{
-            color: map-get($map: $colors, $key: "dark-grey");
-        }
+.top-blurb {
+  margin: 3.75rem 1.875rem;
+  max-width: 25rem;
+  &__CTA {
+    font-weight: map-get($map: $font-weights, $key: "bold");
+    letter-spacing: 1em;
+    &:hover {
+      color: map-get($map: $colors, $key: "dark-grey");
     }
+  }
 }
 
-.about{
-    &__blurb{
-     margin: 3.313rem map-get($map: $margins, $key: "mobile-x");
-    }
-    &__heading{
-        letter-spacing: 0.375em;
-    }
+.about {
+  &__blurb {
+    margin: 3.375rem 1.875rem 2.75rem 1.875rem;
+
+    max-width: 30rem;
+  }
+  &__heading {
+    max-width: 30rem;
+
+    letter-spacing: 0.375em;
+  }
+  &__paragraph{
+    margin-bottom: 0;
+  }
+
 }

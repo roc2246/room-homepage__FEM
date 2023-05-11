@@ -6,13 +6,20 @@ button{
 }
 
 p{
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     font-weight: map-get($map: $font-weights, $key: "light");
 }
 
 h1{
-    line-height: 1.5rem;
+    line-height: 2rem;
+    font-size: 2rem;
+    margin-top: 0;
 }
+
+h4{
+    margin-top: 0;
+}
+
 ul{
     padding: 0;
 }

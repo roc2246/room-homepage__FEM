@@ -3,6 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    max-width: 375px;
     aspect-ratio: 375/360;
 
     &__toggle{
@@ -11,3 +12,4 @@
         }
     }
 }
+

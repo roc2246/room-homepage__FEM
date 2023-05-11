@@ -13,11 +13,16 @@ button {
   padding: 0; }
 
 p {
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   font-weight: 100; }
 
 h1 {
-  line-height: 1.5rem; }
+  line-height: 2rem;
+  font-size: 2rem;
+  margin-top: 0; }
+
+h4 {
+  margin-top: 0; }
 
 ul {
   padding: 0; }
@@ -30,7 +35,8 @@ a {
   cursor: pointer; }
 
 .top-blurb {
-  margin: 3.75rem 2.063rem; }
+  margin: 3.75rem 1.875rem;
+  max-width: 25rem; }
   .top-blurb__CTA {
     font-weight: 500;
     letter-spacing: 1em; }
@@ -38,10 +44,15 @@ a {
       color: #a1a1a1; }
 
 .about__blurb {
-  margin: 3.313rem 2.063rem; }
+  margin: 3.375rem 1.875rem 2.75rem 1.875rem;
+  max-width: 30rem; }
 
 .about__heading {
+  max-width: 30rem;
   letter-spacing: 0.375em; }
+
+.about__paragraph {
+  margin-bottom: 0; }
 
 .slider__container {
   background-color: black;
@@ -54,13 +65,16 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  max-width: 420px;
   aspect-ratio: 420/266; }
 
 .about__img-cont--light {
+  margin-left: auto;
   background-image: url("/images/image-about-light.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  max-width: 420px;
   aspect-ratio: 420/266; }
 
 header {
@@ -115,6 +129,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  max-width: 375px;
   aspect-ratio: 375/360; }
   .slider__toggle--desktop {
     display: none; }
