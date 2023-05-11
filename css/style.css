@@ -22,6 +22,7 @@ h1 {
   margin-top: 0; }
 
 h4 {
+  letter-spacing: 0.375em;
   margin-top: 0; }
 
 ul {
@@ -52,10 +53,6 @@ a {
   margin: 3.375rem 1.875rem 2.75rem 1.875rem;
   max-width: 25rem; }
 
-.about__heading {
-  max-width: 25rem;
-  letter-spacing: 0.375em; }
-
 .about__paragraph {
   margin-bottom: 0; }
 
@@ -63,6 +60,13 @@ a {
   .about__blurb {
     margin-left: auto;
     margin-right: auto; } }
+
+.nav__toggle--close {
+  display: none; }
+
+@media (min-width: 501px) {
+  .nav__toggle {
+    display: none; } }
 
 .slider__container {
   background-color: black;
@@ -87,9 +91,9 @@ a {
 
 @media (min-width: 801px) {
   .about__img-cont--dark {
-    max-width: 420px; }
+    max-width: 26.25rem; }
   .about__img-cont--light {
-    max-width: 420px; } }
+    max-width: 26.25rem; } }
 
 header {
   display: flex;
@@ -100,14 +104,16 @@ header {
   display: flex;
   flex-direction: row;
   gap: 2rem; }
-  .nav__links--mobile {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem; }
-  .nav__links--desktop {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
+  .nav__links {
+    display: none; }
+    .nav__links--mobile {
+      flex-direction: column;
+      gap: 1.5rem; }
+  @media (min-width: 501px) {
+    .nav__links--desktop {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem; } }
 
 .slider {
   display: flex;
@@ -129,12 +135,7 @@ header {
   flex-wrap: wrap; }
 
 .nav {
-  margin: 3rem 2.063rem; }
-  .nav__toggle--close {
-    display: none; }
-  @media (min-width: 501px) {
-    .nav__toggle {
-      display: none; } }
+  margin: 3rem 1.875rem; }
   .nav .logo {
     align-self: start;
     margin-left: auto;
@@ -144,20 +145,15 @@ header {
       margin-left: unset;
       margin-right: unset; } }
   .nav__links {
-    display: none;
     margin-top: 0; }
     .nav__links--mobile {
       position: absolute;
       background-color: #a1a1a1;
-      left: 2.063rem;
+      left: 1.75rem;
+      top: 6rem;
       padding: 1rem;
       height: 10rem;
       width: 5rem; }
-  @media (min-width: 501px) {
-    .nav__links {
-      display: flex;
-      flex-direction: row;
-      gap: 2rem; } }
   .nav__link {
     height: 2rem; }
     .nav__link:hover {

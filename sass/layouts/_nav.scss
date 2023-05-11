@@ -1,19 +1,5 @@
 .nav {
-  margin: map-get($map: $margins, $key: "nav-y")
-    map-get($map: $margins, $key: "mobile-x");
-
-  &__toggle {
-    &--close {
-      display: none;
-    }
-  }
-
-  @media (min-width: 501px) {
-    &__toggle {
-      display: none;
-    }
-  }
-
+  margin: 3rem 1.875rem;
   .logo {
     align-self: start;
     margin-left: auto;
@@ -28,26 +14,19 @@
   }
 
   &__links {
-    display: none;
     margin-top: 0;
     &--mobile {
       position: absolute;
       background-color: map-get($map: $colors, $key: "dark-grey");
 
-      left: map-get($map: $margins, $key: "mobile-x");
+      left: 1.75rem;
+      top: 6rem;
       padding: 1rem;
       height: 10rem;
       width: 5rem;
     }
-    
   }
-  @media (min-width: 501px) {
-    &__links {
-      display: flex;
-      flex-direction: row;
-      gap: 2rem;
-    }
-  }
+
   &__link {
     height: 2rem;
     &:hover {
@@ -56,7 +35,6 @@
     }
     &--anchor {
       color: map-get($map: $colors, $key: "white");
-      
     }
   }
 }

@@ -5,7 +5,6 @@
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
-      // max-width: 26.25rem;
       aspect-ratio: 420/266;
     }
     &--light {
@@ -14,7 +13,6 @@
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
-      // max-width: 26.25rem;
       aspect-ratio: 420/266;
     }
   }
@@ -24,10 +22,10 @@
   .about {
     &__img-cont {
       &--dark {
-        max-width: 420px;
+        max-width: 26.25rem;
       }
       &--light {
-        max-width: 420px;
+        max-width: 26.25rem;
       }
     }
   }

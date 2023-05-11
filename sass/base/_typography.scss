@@ -20,18 +20,13 @@
 .about {
   &__blurb {
     margin: 3.375rem 1.875rem 2.75rem 1.875rem;
-
     max-width: 25rem;
-  }
-  &__heading {
-    max-width: 25rem;
-
-    letter-spacing: 0.375em;
   }
   &__paragraph {
     margin-bottom: 0;
   }
 }
+
 @media (min-width: 455px) {
   .about {
     &__blurb {

@@ -10,18 +10,21 @@ header {
   gap: 2rem;
 
   &__links {
+    display: none;
     &--mobile {
-      display: flex;
       flex-direction: column;
       gap: 1.5rem;
     }
-    &--desktop {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+  }
+  @media (min-width: 501px) {
+    &__links {
+      &--desktop {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+      }
     }
   }
-  
 }
 
 .slider {
