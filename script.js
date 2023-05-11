@@ -40,17 +40,9 @@ const sliderFowardDesktop =
 
 let imgNo = 1;
 
-const headings = [
-  "1",
-  "2",
-  "3"
-]
+const headings = ["1", "2", "3"];
 
-const paragraphs = [
-  "1",
-  "2",
-  "3"
-]
+const paragraphs = ["1", "2", "3"];
 
 function setHeroImgs(screen, no) {
   return `${screen}-image-hero-${no}.jpg`;
@@ -69,8 +61,8 @@ sliderFowardMobile.onclick = () => {
   if (imgNo > 3) imgNo = 1;
   sliderImgMobile.style.backgroundImage = `url(images/${mobileImage(imgNo)})`;
   sliderImgDesktop.style.backgroundImage = `url(images/${desktopImage(imgNo)})`;
-sliderHeading.innerHTML = headings[imgNo-1]
-sliderParagraph.innerHTML = paragraphs[imgNo-1]
+  sliderHeading.innerHTML = headings[imgNo - 1];
+  sliderParagraph.innerHTML = paragraphs[imgNo - 1];
 };
 
 sliderBackMobile.onclick = () => {
@@ -78,8 +70,8 @@ sliderBackMobile.onclick = () => {
   if (imgNo < 1) imgNo = 3;
   sliderImgMobile.style.backgroundImage = `url(images/${mobileImage(imgNo)})`;
   sliderImgDesktop.style.backgroundImage = `url(images/${desktopImage(imgNo)})`;
-  sliderHeading.innerHTML = headings[imgNo-1]
-  sliderParagraph.innerHTML = paragraphs[imgNo-1]
+  sliderHeading.innerHTML = headings[imgNo - 1];
+  sliderParagraph.innerHTML = paragraphs[imgNo - 1];
 };
 
 sliderFowardDesktop.onclick = () => {
@@ -87,8 +79,8 @@ sliderFowardDesktop.onclick = () => {
   if (imgNo > 3) imgNo = 1;
   sliderImgMobile.style.backgroundImage = `url(images/${mobileImage(imgNo)})`;
   sliderImgDesktop.style.backgroundImage = `url(images/${desktopImage(imgNo)})`;
-  sliderHeading.innerHTML = headings[imgNo-1]
-  sliderParagraph.innerHTML = paragraphs[imgNo-1]
+  sliderHeading.innerHTML = headings[imgNo - 1];
+  sliderParagraph.innerHTML = paragraphs[imgNo - 1];
 };
 
 sliderBackDesktop.onclick = () => {
@@ -96,6 +88,6 @@ sliderBackDesktop.onclick = () => {
   if (imgNo < 1) imgNo = 3;
   sliderImgMobile.style.backgroundImage = `url(images/${mobileImage(imgNo)})`;
   sliderImgDesktop.style.backgroundImage = `url(images/${desktopImage(imgNo)})`;
-  sliderHeading.innerHTML = headings[imgNo-1]
-  sliderParagraph.innerHTML = paragraphs[imgNo-1]
+  sliderHeading.innerHTML = headings[imgNo - 1];
+  sliderParagraph.innerHTML = paragraphs[imgNo - 1];
 };
