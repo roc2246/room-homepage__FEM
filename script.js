@@ -68,12 +68,12 @@ const slider = {
   setMobileImg: (no) => slider.setHeroImgs("mobile", no),
   setDesktopImg: (no) => slider.setHeroImgs("desktop", no),
   setImgs: function () {
-    this.img("mobile").style.backgroundImage = `url(images/${this.setMobileImg(
+    this.img("mobile").style.backgroundImage = `url(../images/${this.setMobileImg(
       imgNo
     )})`;
     this.img(
       "desktop"
-    ).style.backgroundImage = `url(images/${this.setDesktopImg(imgNo)})`;
+    ).style.backgroundImage = `url(../images/${this.setDesktopImg(imgNo)})`;
     this.txt("heading").innerHTML = headings[imgNo - 1];
     this.txt("paragraph").innerHTML = paragraphs[imgNo - 1];
   },

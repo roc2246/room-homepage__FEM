@@ -1,7 +1,7 @@
 .about {
   &__img-cont {
     &--dark {
-      background-image: url("/images/image-about-dark.jpg");
+      background-image: url("../images/image-about-dark.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
@@ -9,7 +9,7 @@
     }
     &--light {
       margin-left: auto;
-      background-image: url("/images/image-about-light.jpg");
+      background-image: url("../images/image-about-light.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
