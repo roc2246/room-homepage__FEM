@@ -7,7 +7,7 @@
   &__toggle {
     &--desktop {
       display: none;
-      width: 180px;
+      width: 11.25rem;
       margin-top: auto;
       margin-right: auto;
       & > .slider__container {
@@ -24,7 +24,7 @@
 
 @media (min-width: 801px) {
   .slider {
-    max-width: 840px;
+    max-width: 52.5rem;
     aspect-ratio: 840/534;
     &--mobile {
       background-image: none;

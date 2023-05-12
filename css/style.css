@@ -54,7 +54,7 @@ a {
 @media (min-width: 1440px) {
   .top-blurb {
     margin: unset;
-    width: calc(1440px - 840px); }
+    width: calc(90rem - 52.5rem); }
     .top-blurb__heading, .top-blurb__paragraph {
       margin-left: auto;
       margin-right: auto; }
@@ -187,7 +187,7 @@ header {
   aspect-ratio: 375/360; }
   .slider__toggle--desktop {
     display: none;
-    width: 180px;
+    width: 11.25rem;
     margin-top: auto;
     margin-right: auto; }
     .slider__toggle--desktop > .slider__container {
@@ -198,7 +198,7 @@ header {
 
 @media (min-width: 801px) {
   .slider {
-    max-width: 840px;
+    max-width: 52.5rem;
     aspect-ratio: 840/534; }
     .slider--mobile {
       background-image: none; }
