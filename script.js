@@ -19,27 +19,6 @@ nav.toggle.onclick = () => {
   }
 };
 
-const sliderImgMobile = document.getElementsByClassName("slider--mobile")[0];
-const sliderImgDesktop = document.getElementsByClassName("slider--desktop")[0];
-const sliderHeading = document.getElementsByClassName("top-blurb__heading")[0];
-const sliderParagraph = document.getElementsByClassName(
-  "top-blurb__paragraph"
-)[0];
-
-// mobile
-const sliderBackMobile =
-  document.getElementsByClassName("slider__container")[0];
-const sliderFowardMobile =
-  document.getElementsByClassName("slider__container")[1];
-
-// desktop
-const sliderBackDesktop =
-  document.getElementsByClassName("slider__container")[2];
-const sliderFowardDesktop =
-  document.getElementsByClassName("slider__container")[3];
-
-let imgNo = 1;
-
 const headings = [
   `Discover innovative ways to decorate`,
   `We are available all across the 
@@ -79,50 +58,58 @@ style for property owners across the country.
     want for their home and office.`,
 ];
 
-function setHeroImgs(screen, no) {
-  return `${screen}-image-hero-${no}.jpg`;
+let imgNo = 1;
+
+const slider = {
+  img: (display) => document.getElementsByClassName(`slider--${display}`)[0],
+  txt: (type) => document.getElementsByClassName(`top-blurb__${type}`)[0],
+  toggle: (no) => document.getElementsByClassName(`slider__container`)[no],
+  setHeroImgs: (screen, no) => `${screen}-image-hero-${no}.jpg`,
+  setMobileImg: (no) => slider.setHeroImgs("mobile", no),
+  setDesktopImg: (no) => slider.setHeroImgs("desktop", no),
+  setImgs: function () {
+    this.img("mobile").style.backgroundImage = `url(images/${this.setMobileImg(
+      imgNo
+    )})`;
+    this.img(
+      "desktop"
+    ).style.backgroundImage = `url(images/${this.setDesktopImg(imgNo)})`;
+    this.txt("heading").innerHTML = headings[imgNo - 1];
+    this.txt("paragraph").innerHTML = paragraphs[imgNo - 1];
+  },
+  setToggleFoward: function (no) {
+    this.toggle(no).onclick = () => {
+      imgNo++;
+      if (imgNo > 3) imgNo = 1;
+      this.setImgs();
+    };
+  },
+  setTogglePrev: function (no) {
+    this.toggle(no).onclick = () => {
+      imgNo--;
+      if (imgNo < 1) imgNo = 3;
+      this.setImgs();
+    };
+  },
+};
+
+const toggles = {
+  mobile: {
+    fowards: () => slider.setToggleFoward(1), 
+    prev: () => slider.setTogglePrev(0)
+  }, 
+  desktop: {
+    fowards: () => slider.setToggleFoward(2),
+    prev: () => slider.setTogglePrev(3)
+  }
 }
 
-const mobileImage = function (no) {
-  return setHeroImgs("mobile", no);
-};
+toggles.mobile.fowards()
+toggles.mobile.prev()
+toggles.desktop.fowards()
+toggles.desktop.prev()
 
-const desktopImage = function (no) {
-  return setHeroImgs("desktop", no);
-};
 
-sliderFowardMobile.onclick = () => {
-  imgNo++;
-  if (imgNo > 3) imgNo = 1;
-  sliderImgMobile.style.backgroundImage = `url(images/${mobileImage(imgNo)})`;
-  sliderImgDesktop.style.backgroundImage = `url(images/${desktopImage(imgNo)})`;
-  sliderHeading.innerHTML = headings[imgNo - 1];
-  sliderParagraph.innerHTML = paragraphs[imgNo - 1];
-};
 
-sliderBackMobile.onclick = () => {
-  imgNo--;
-  if (imgNo < 1) imgNo = 3;
-  sliderImgMobile.style.backgroundImage = `url(images/${mobileImage(imgNo)})`;
-  sliderImgDesktop.style.backgroundImage = `url(images/${desktopImage(imgNo)})`;
-  sliderHeading.innerHTML = headings[imgNo - 1];
-  sliderParagraph.innerHTML = paragraphs[imgNo - 1];
-};
 
-sliderFowardDesktop.onclick = () => {
-  imgNo++;
-  if (imgNo > 3) imgNo = 1;
-  sliderImgMobile.style.backgroundImage = `url(images/${mobileImage(imgNo)})`;
-  sliderImgDesktop.style.backgroundImage = `url(images/${desktopImage(imgNo)})`;
-  sliderHeading.innerHTML = headings[imgNo - 1];
-  sliderParagraph.innerHTML = paragraphs[imgNo - 1];
-};
 
-sliderBackDesktop.onclick = () => {
-  imgNo--;
-  if (imgNo < 1) imgNo = 3;
-  sliderImgMobile.style.backgroundImage = `url(images/${mobileImage(imgNo)})`;
-  sliderImgDesktop.style.backgroundImage = `url(images/${desktopImage(imgNo)})`;
-  sliderHeading.innerHTML = headings[imgNo - 1];
-  sliderParagraph.innerHTML = paragraphs[imgNo - 1];
-};
